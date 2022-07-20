@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Kinolar</title>
+</head>
+<body>
+	<main>
+		<section>
+			<div class="container py-5">
+				<h2 class=" text-center mb-4">Movies catalog</h2>
+				
+				<div class="row">
+					<div class="col-4 position-relative">
+						<div class="position-sticky w-100% top-0" style="top: 30px;">
+							<form class="mb-5">
+								<input type="text" class="form-control form-control-sm mb-2"  aria-describedby="Search for movies" placeholder="Search for movies">
+								
+								<input type="number" class="form-control form-control-sm mb-2" placeholder="IMBD Rating" min="0" max="10" step="0.1">
+								
+								<select class="form-select form-select-sm mb-2" aria-label="Default select example">
+									<option selected>All</option>
+									<option value="1">One</option>
+									<option value="2">Two</option>
+									<option value="3">Three</option>
+								</select>
+								
+								<select class="form-select form-select-sm mb-2" aria-label="Default select example">
+									<option selected>Rating (First-high)</option>
+									<option value="1">Rating (First-high)</option>
+								</select>
+								
+								<button type="submit" class="btn btn-primary btn-sm w-100">Search</button>
+							</form>
+							
+							<h3 class="text-center">Bookmarked Movies</h3>
+							
+							<ul class="list-group">
+								<li class="list-group-item p-3">
+									<h5 class="d-inline-blok text-truncate" style="max-width: 250px;">
+										Osmondagi Bolalar
+									</h5>
+									<button class="btn btn-danger btn-sm" type="button">Remove</button>
+								</li>
+								<li class="list-group-item p-3">
+									<h5 class="d-inline-blok text-truncate" style="max-width: 250px;">
+										Osmondagi Bolalar-2
+									</h5>
+									<button class="btn btn-danger btn-sm" type="button">Remove</button>
+								</li>
+								<li class="list-group-item p-3">
+									<h5 class="d-inline-blok text-truncate" style="max-width: 250px;">
+										Osmondagi Bolalar Najot ta'lim
+									</h5>
+									<button class="btn btn-danger btn-sm" type="button">Remove</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-8">
+						<h3 class="fs-4">
+							Search Result: <span>2</span>
+						</h3>
+						
+						<div class="alert alert-success alert-dismissible fade show p-2" role="alert">
+							<strong>Holy guacamole!</strong> You should check in on some of those fields below.
+							<button type="button" class="btn-close p-0 h-100 pe-4" data-bs-dismiss="alert" aria-label="Close"></button>
+						</div>
+						
+						<div class="row row-cols-1 row-cols-md-2 card__wrapper">
+							<div class="col mb-3">
+								<div class="card h-100">
+									<img src="./images/titanik.webp" class="card-img-top" style="max-height: 200px; object-fit: cover; object-position: center;" alt="Titanik img">
+									<div class="card-body">
+										<h5 class="card-title text-truncate" style="max-width: 100%;">TITANIK</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="pagination pagination-sm justify-content-center">
+						<li class="page-item active" aria-current="page">
+							<span class="page-link">1</span>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">4</a></li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/movies.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
